@@ -1,0 +1,52 @@
+  ▲ Next.js 14.2.5
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./src/app/(dashboard)/datasets/[id]/page.tsx
+Module not found: Can't resolve '@/components/dataset/DatasetSchema'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./src/app/(dashboard)/datasets/[id]/page.tsx
+Module not found: Can't resolve '@/components/dataset/DatasetSample'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./src/app/(dashboard)/datasets/page.tsx
+Module not found: Can't resolve '@/components/ui/dropdown-menu'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./src/components/charts/ChartBuilder.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+     ,-[[36;1;4mE:\DataLens\frontend\src\components\charts\ChartBuilder.tsx[0m:210:1]
+ [2m210[0m |   const availableChannels = ENCODING_CHANNELS[chartType] || [];
+ [2m211[0m | 
+ [2m212[0m |   return (
+ [2m213[0m |     <div className="space-y-6 h-full flex flex-col">
+     : [31;1m     ^^^[0m
+ [2m214[0m |       {/* Header */}
+ [2m215[0m |       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+ [2m216[0m |         <div className="flex items-center gap-4">
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/charts/ChartBuilder.tsx
+./src/app/(dashboard)/datasets/[id]/charts/new/page.tsx
+
+./src/components/profile/ProfileMissing.tsx
+Module not found: Can't resolve '@/components/ui/progress'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/components/profile/ProfileReport.tsx
+./src/app/(dashboard)/datasets/[id]/page.tsx
+
+
+> Build failed because of webpack errors
