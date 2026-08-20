@@ -96,3 +96,11 @@ config.local.yml
 
 # TypeScript
 *.tsbuildinfo
+
+# Claude / Ruflo local config
+.claude/
+.claude-flow/
+backend/.claude/
+backend/.claude-flow/
+frontend/.claude/
+frontend/.claude-flow/
